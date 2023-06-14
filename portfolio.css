@@ -1,1 +1,43 @@
-/*# sourceMappingURL=portfolio.css.map */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#container {
+  min-height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100%;
+}
+
+button {
+  border: none;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}/*# sourceMappingURL=portfolio.css.map */
