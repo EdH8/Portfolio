@@ -1,0 +1,26 @@
+//======================================================
+//======================================================
+//ON ALL PAGES EXCEPT INDEX
+//======================================================
+//======================================================
+
+.banner{
+    background-image: url("background_sml.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.current_page{
+    color: white;
+    text-align: center;
+    @include medium{
+        padding-top: 40px;
+    }
+
+}
+
+.current_page h1{
+    padding-bottom: 40px;
+    margin: 0;
+}

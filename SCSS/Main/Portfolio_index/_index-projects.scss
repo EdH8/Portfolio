@@ -1,0 +1,198 @@
+//======================================================
+//PROJECTS CSS/SASS:
+//======================================================
+
+#PROJECT{
+    height: 100%;
+    @include large{
+        height: 100vh;
+    }
+}
+
+.above_projects{
+    text-align: left;
+    margin: 100px 0 0 25px;
+    @include small{
+        text-align: center;
+        margin: 100px 395px 0 0;
+    }
+    @include medium{
+        text-align: center;
+        margin: 100px 440px 0 0;
+    }
+    @include large{
+        text-align: center;
+        margin: 0 675px 0 0;
+    }
+    @include x-large{
+        text-align: center;
+        margin: 0 850px 0 0;
+    }
+}
+
+.project_cards{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include large{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+    @include x-large{
+        flex-direction: column;
+    }
+}
+
+//CARD WIDTH/HEIGHT STYLING
+
+.project_style{
+    width: 90%;
+    @include small{
+        width: 500px;
+        height: 500px;
+    }
+    @include medium{
+        width: 550px;
+    }
+    @include large{
+        width: 250px;
+        height: 300px;
+    }
+    @include x-large{
+        width: 300px;
+        height: 350px;
+    }
+}
+
+
+.card_container_one,
+.card_container_two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include large{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+.project_style{
+    margin-bottom: 20px;
+}
+
+.project_style h3,
+.project_style button{
+    margin-left: 10px;
+}
+
+#project_one,
+#project_two{
+    @include large{
+        margin: 0 15px 15px 0;
+    }
+    @include x-large{
+        margin: 0 30px 30px 0;
+    }
+}
+
+
+#project_four,
+#project_five{
+    @include large{
+        margin: 0 15px 30px 0;
+    }
+    @include x-large{
+        margin: 0 30px 30px 0;
+    }
+}
+
+#project_three{
+    @include large{
+        margin: 0 0 15px 0;
+    }
+    @include x-large{
+        margin: 0 0 30px 0;
+    }
+}
+
+#project_six{
+    @include large{
+        margin: 0 0 30px 0;
+    }
+    @include x-large{
+        margin: 0 0 30px 0;
+    }
+}
+
+.project_ss img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.project_header h3{
+    color: white;
+}
+
+.github_btn button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    color: white;
+    margin-bottom: 10px;
+    @include small{
+        margin-top: 55px;
+        margin-bottom: unset;
+    }
+    @include medium{
+        margin-top: 20px;
+    }
+    @include large{
+        margin-top: 25px;
+    }
+    @include x-large{
+        margin-top: 40px;
+    }
+}
+
+.project_style{
+    box-shadow: 0 0 5px 1px rgba(255,255,255, 1);
+    transition: .5s;
+}
+
+
+.project_style:hover{
+    transform: translateY(-10px);
+}
+
+
+.project_header{
+    color:white
+}
+
+#project_one img{
+    @include small{
+        height: 250px;
+    }
+    @include large{
+        height: 125px;
+    }
+}
+
+#project_one button{
+    @include small{
+        margin-top: 140px;
+    }
+    @include large{
+        margin-top: 65px;
+    }
+    @include x-large{
+        margin-top: 115px;
+    }
+}

@@ -1,0 +1,72 @@
+//======================================================
+//======================================================
+//SCS SCHEME CSS/SASS:
+//======================================================
+//======================================================
+
+main{
+    color: white;
+    @include medium{
+        margin-left: 175px;
+    }
+}
+
+.scs_container,
+.additional_info{
+    @include large{
+        display: flex;
+    }
+}
+
+.scs_container{
+    @include large{
+        flex-direction: column;
+    }
+}
+
+.intro_scs,
+.treehouse,
+.about_net{
+    background-color: $Eerie_Black;
+    box-shadow: 0px -1px 1px 0 rgba(255,255,255, 1);
+    @include small{
+        margin: 10px 5px;
+        box-shadow: -1px -1px 1px 1px rgba(255,255,255, 1);
+    }
+    @include medium{
+        padding: 10px 0;
+        margin: 20px 5px;
+    }
+    @include large{
+        padding: 0;
+        margin: 10px;
+    }
+    @include x-large{
+        padding: 0;
+        margin: 15px;
+    }
+}
+
+.treehouse{
+    padding-bottom: 20px;
+    @include x-large{
+        width: unset;
+    }
+}
+
+.treehouse a,
+.treehouse a:visited{
+    color: white;
+}
+
+.treehouse *,
+.about_net *,
+.intro_scs *{
+    margin: 20px;
+    letter-spacing: .7px;
+    line-height: 25px;
+}
+
+.current_page{
+    font-size: 24px;
+}

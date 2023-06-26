@@ -1,0 +1,63 @@
+//======================================================
+//======================================================
+//ABOUT ME CSS/SASS:
+//======================================================
+//======================================================
+
+.about_me_container{
+    color: white;
+    @include medium{
+        margin-left: 175px;
+    }
+}
+
+.about_prof a,
+.about_prof a:visited{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.about_prof a:hover{
+    text-decoration: underline;
+}
+
+
+.about_prof,
+.about_personal{
+    background-color: $Eerie_Black;
+    box-shadow: 0px -1px 1px 0 rgba(255,255,255, 1);
+    @include small{
+        margin: 10px 5px;
+        box-shadow: -1px -1px 1px 1px rgba(255,255,255, 1);
+    }
+    @include medium{
+        padding: 10px 0;
+        margin: 20px 5px;
+    }
+    @include large{
+        padding: 0;
+        margin: 10px;
+    }
+    @include x-large{
+        padding: 0;
+        margin: 15px;
+    }
+}
+
+.about_prof *,
+.about_personal *{
+    margin: 20px;
+    letter-spacing: .7px;
+    line-height: 25px;
+}
+
+.about_prof h1,
+.about_personal h1{
+    padding-top: 20px;
+}
+
+.about_prof p,
+.about_personal p{
+    padding-bottom: 20px;
+}

@@ -3,16 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
-    <title>Pretty cool</title>
+    <link rel="stylesheet" type="text/css" href="SCSS/portfolio.css">
+    <script src="https://kit.fontawesome.com/0748773ba3.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
 </head>
 
 <body>
 
+<!--======================================-->
+<!--HEADER HTML-->
+<!--======================================-->
+<!-- <div class="container"> -->
+<header id="HEADER">
+        <div class="header_img">
+            <div class="hamburger-menu">
+                <div class="ham-bar bar-top"></div>
+                <div class="ham-bar bar-mid"></div>
+                <div class="ham-bar bar-bottom"></div>
+            </div>
+            <div class="header_container">
+                <div class="header_text">
+                    <div class="header_intro">
+                        <h2>Eddie Hickman</h2>
+                        <p>Aspiring Web Developer</p>
+                    </div>
+                    <div class="scroll_down">
+                        <p>Scroll Down <br><i class="arrow down"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
 
-<p>Something</p>
+<!--======================================-->
+<!--SIDE NAVBAR HTML-->
+<!--======================================-->
+<nav>
+    <div class="sidenav">
+        <div class="nav_initials">
+            <a id="initials" href="#HEADER">EH</a>
+        </div>
+        <div class="nav_links">
+            <div id="about_me" class="nav_categories">
+                <a href="about_me.html">About Me</a>
+            </div>
+            <div id="my_projects" class="nav_categories">
+                <a href="#PROJECTS">My Projects</a>
+            </div>
+            <div id="coding_examples" class="nav_categories">
+                <a href="coding_examples.html">Coding Examples</a>
+            </div>
+            <div id="scs_scheme" class="nav_categories">
+                <a href="scs_scheme.html">SCS Scheme</a>
+            </div>
+            <div id="contact_me" class="nav_categories">
+                <a href="#CONTACT_ME">Contact Me</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!--======================================-->
+<!--PROJECTS HTML-->
+<!--======================================-->
+
+<section id="PROJECTS">
+
+    <div class="project_cards">
+        <div class="above_projects">
+            <h3 class="project_header">My Projects:</h3>
+        </div>
+        <div class="something">
+            <div class="card_container_one">
+            <div class="project_style" id="project_one">
+                    <div class="project_ss">   
+                        <img id="netmatters_ss" alt="Image of a project" src="SCSS/Images/netmatters_project.png">
+                    </div>
+
+                    <div class="project_header">
+                        <h3>Netmatters Project</h3>
+                    </div>
+
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
+
+            </div>
+
+            <div class="project_style" id="project_two">
+
+                    <div class="project_ss">   
+                        <img id="coming_soon_one" alt="Image of a project" src="SCSS/Images/coming_soon.jpg">
+                    </div>
+
+                    <div class="project_header">
+                        <h3>Coming soon...</h3>
+                    </div>
+
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
 
 
+            </div>
+            <div class="project_style" id="project_three">
+
+                    <div class="project_ss">   
+                        <img id="coming_soon_two" alt="Image of a project" src="SCSS/Images/coming_soon.jpg">
+                    </div>
+
+                    <div class="project_header">
+                        <h3>Coming soon...</h3>
+                    </div>
+
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card_container_two">
+            <div class="project_style" id="project_four">
+                    <div class="project_ss">   
+                        <img id="coming_soon_three" alt="Image of a project" src="SCSS/Images/coming_soon.jpg">
+                    </div>
+                
+                    <div class="project_header">
+                        <h3>Coming soon...</h3>
+                    </div>
+                
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
+
+
+            </div>
+            <div class="project_style" id="project_five">
+
+                    <div class="project_ss">   
+                        <img id="coming_soon_four" alt="Image of a project" src="SCSS/Images/coming_soon.jpg">
+                    </div>
+
+                    <div class="project_header">
+                        <h3>Coming soon...</h3>
+                    </div>
+
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
+
+
+            </div>
+
+            <div class="project_style" id="project_six">
+
+                    <div class="project_ss">   
+                        <img id="coming_soon_five" alt="Image of a project" src="SCSS/Images/coming_soon.jpg">
+                    </div>
+
+                    <div class="project_header">
+                        <h3>Coming soon...</h3>
+                    </div>
+
+                    <div class="github_btn">
+                        <button>GitHub Repo <i class="fa-brands fa-github"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--======================================-->
+<!--GET IN TOUCH HTML-->
+<!--======================================-->
+
+
+<form id="CONTACT_ME" method="POST" >
+
+    <div class="contactme_container">
+        <div class="contact_text">
+            <h1>Get In Touch:</h1>
+            <p>If you'd like to get in touch my email is</p>
+            <a href="mailto:">eddie.hickman8@hotmail.co.uk</a>
+        </div>
+
+        <div class="inputs_container">
+            <div class="input_fields" id="First_Name" class="info">
+                <input placeholder="First Name *" type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="input_fields" id="Last_Name" class="info">
+                <input placeholder="Last name *" type="text" id="last-name" name="last-name" required>
+              </div>
+              <div class="input_fields" id="Email_Address" class="info">
+                <input placeholder="Email address *" type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+              </div>
+              <div class="input_fields" id="Subject" class="feedback">
+                  <input placeholder="Subject" id="message" name="message" required>
+              </div>
+              <div class="input_fields" id="Message" class="feedback">
+                <textarea placeholder="Message" id="textarea_message" name="textarea_message" required maxlength="255"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+        </div>
+    </div>
+
+</form>
 
 </body>
 

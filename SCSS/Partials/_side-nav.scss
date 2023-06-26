@@ -1,0 +1,43 @@
+//======================================================
+//SIDE NAVBAR CSS/SASS:
+//======================================================
+nav{
+    display: none;
+    @include medium{
+        display: unset;
+    }
+}
+
+#initials{
+    margin: 0;
+}
+.nav_initials{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 175px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: $Night; 
+    padding-top: 60px; 
+}
+
+.nav_links{
+    margin: 100px 5px 0 5px;
+}
+
+.nav_categories{
+    margin: 20px 0;
+}
+
+.sidenav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 17px;
+}

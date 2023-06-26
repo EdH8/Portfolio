@@ -1,0 +1,93 @@
+//======================================================
+//GET IN TOUCH CSS/SASS:
+//======================================================
+
+form textarea{
+    resize: none;
+}
+
+.contact_text{
+    color: white;
+    @include small{
+        margin-right: 150px;
+    }
+    @include medium{
+        margin-right: 195px;
+    }
+    @include large{
+        margin-right: 192px;
+    }
+}
+
+.contact_text p,
+.contact_text a{
+    font-size: 20px;
+}
+
+.contact_text a,
+.contact_text a:visited{
+    color: white;
+    background-color: $Jet;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contact_text a:hover{
+    text-decoration: underline;
+}
+
+.info,
+.feedback{
+    margin: 5px 0;
+}
+
+.contactme_container{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    margin-left: 30px;
+    @include small{
+        margin-left: unset;
+        align-items: center;
+    }
+    @include large{
+        height: 100vh;
+        justify-content: center;
+        scroll-snap-align: start;
+    }
+}
+
+.inputs_container button{
+    padding: 8px 12px;
+}
+
+#First_Name{
+    margin-top: 10px;
+    @include large{
+        margin-top: 20px;
+    }
+}
+.input_fields input{
+    height: 40px;
+}
+
+.input_fields textarea{
+    height: 80px;
+}
+
+.input_fields input,
+.input_fields textarea{
+    width: 90%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+
+    @include small{
+        width: 500px;
+    }
+    @include medium{
+        width: 545px;
+    }
+    @include large{
+        margin-bottom: 10px;
+    }
+}

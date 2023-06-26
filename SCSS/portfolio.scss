@@ -1,0 +1,19 @@
+@import 'Partials/mixins',
+        'Partials/variables',
+        'Partials/base-styling',
+        'Partials/side-nav',
+        'Partials/banner',
+        'Main/Portfolio_index/index-header',
+        'Main/Portfolio_index/index-projects',
+        'Main/Portfolio_index/index-contact-me',
+        'Main/About_me/about-me',
+        'Main/Coding_examples/coding-examples',
+        'Main/SCS_Scheme/SCS-Scheme';
+
+.header_container,
+section,
+form{
+    @include medium{
+        margin-left: 175px;  
+    }
+}
