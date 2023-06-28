@@ -10,9 +10,10 @@
         'Main/Coding_examples/coding-examples',
         'Main/SCS_Scheme/SCS-Scheme';
 
-.header_container,
+// .header_container,
 section,
-form{
+form,
+#HEADER{
     @include medium{
         margin-left: 175px;  
     }
