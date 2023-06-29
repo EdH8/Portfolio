@@ -268,11 +268,13 @@ nav {
 
 .project_style {
   width: 90%;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 576px) {
   .project_style {
     width: 500px;
     height: 500px;
+    padding-bottom: unset;
   }
 }
 @media screen and (min-width: 768px) {
@@ -315,7 +317,7 @@ nav {
 }
 
 .project_style h3,
-.project_style button,
+.project_style a,
 .project_description {
   margin-left: 10px;
 }
@@ -377,33 +379,12 @@ nav {
   color: white;
 }
 
-.github_btn button {
+.github_btn a {
+  text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
   background-color: #1b1b1b;
   color: white;
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 576px) {
-  .github_btn button {
-    margin-top: 55px;
-    margin-bottom: unset;
-  }
-}
-@media screen and (min-width: 768px) {
-  .github_btn button {
-    margin-top: 20px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .github_btn button {
-    margin-top: 70px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .github_btn button {
-    margin-top: 40px;
-  }
 }
 
 .project_style {
@@ -431,23 +412,44 @@ nav {
 }
 
 @media screen and (min-width: 576px) {
-  #project_one button {
-    margin-top: 65px;
-  }
-}
-@media screen and (min-width: 768px) {
-  #project_one button {
+  #project_one_link {
     margin-top: 85px;
   }
 }
+@media screen and (min-width: 768px) {
+  #project_one_link {
+    margin-top: 105px;
+  }
+}
 @media screen and (min-width: 992px) {
-  #project_one button {
-    margin-top: 25px;
+  #project_one_link {
+    margin-top: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
-  #project_one button {
+  #project_one_link {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .github_btn {
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .github_btn {
     margin-top: 45px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .github_btn {
+    margin-top: 95px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .github_btn {
+    margin-top: 64px;
   }
 }
 
@@ -474,7 +476,7 @@ form textarea {
 }
 @media screen and (min-width: 992px) {
   .contact_text {
-    margin-right: 192px;
+    margin-right: 205px;
   }
 }
 

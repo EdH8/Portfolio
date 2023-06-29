@@ -51,9 +51,11 @@
 
 .project_style{
     width: 90%;
+    padding-bottom: 20px;
     @include small{
         width: 500px;
         height: 500px;
+        padding-bottom: unset;
     }
     @include medium{
         width: 550px;
@@ -88,7 +90,7 @@
 }
 
 .project_style h3,
-.project_style button,
+.project_style a,
 .project_description{
     margin-left: 10px;
 }
@@ -141,25 +143,26 @@
     color: white;
 }
 
-.github_btn button{
+.github_btn a{
+    text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #1b1b1b;
     color: white;
-    margin-bottom: 10px;
-    @include small{
-        margin-top: 55px;
-        margin-bottom: unset;
-    }
-    @include medium{
-        margin-top: 20px;
-    }
-    @include large{
-        margin-top: 70px;
-    }
-    @include x-large{
-        margin-top: 40px;
-    }
+    // margin-bottom: 10px;
+    // @include small{
+    //     margin-top: 55px;
+    //     margin-bottom: unset;
+    // }
+    // @include medium{
+    //     margin-top: 20px;
+    // }
+    // @include large{
+    //     margin-top: 70px;
+    // }
+    // @include x-large{
+    //     margin-top: 40px;
+    // }
 }
 
 .project_style{
@@ -186,21 +189,35 @@
     }
 }
 
-#project_one button{
+#project_one_link{
     @include small{
-        margin-top: 65px;
-    }
-    @include medium{
         margin-top: 85px;
     }
+    @include medium{
+        margin-top: 105px;
+    }
     @include large{
-        margin-top: 25px;
+        margin-top: 45px;
     }
     @include x-large{
-        margin-top: 45px;
+        margin-top: 65px;
     }
 }
 
+.github_btn{
+    @include small{
+        margin-top: 75px;
+    }
+    @include medium{
+        margin-top: 45px;
+    }
+    @include large{
+        margin-top: 95px;
+    }
+    @include x-large{
+        margin-top: 64px;
+    }
+}
 
 .project_description{
     color: white;
