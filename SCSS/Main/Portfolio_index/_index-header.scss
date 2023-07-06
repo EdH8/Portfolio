@@ -94,6 +94,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+    z-index: 100;
 }
 
 .bar-top {
@@ -102,4 +104,18 @@
 
 .bar-bottom {
     top: 70%;
+}
+
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
 }

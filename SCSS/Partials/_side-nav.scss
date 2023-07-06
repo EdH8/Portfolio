@@ -1,11 +1,16 @@
 //======================================================
 //SIDE NAVBAR CSS/SASS:
 //======================================================
-nav{
-    display: none;
-    @include medium{
-        display: unset;
-    }
+// nav{
+//     display: none;
+//     @include medium{
+//         display: unset;
+//     }
+// }
+
+.sidenav.active{
+    display: unset;
+    overflow: hidden
 }
 
 #initials{
@@ -18,31 +23,99 @@ nav{
     margin: 5px 0 0 0;
 }
 
+//ORIGINAL SIDENAV
+
+// .sidenav {
+//     display: none;
+//     @include medium{
+//         display: unset;
+//     }
+//     height: 100%;
+//     width: 175px;
+//     position: fixed; 
+//     top: 0;
+//     left: 0;
+//     background-color: $Night; 
+//     padding-top: 60px; 
+// }
+
+//NEW SIDENAV
+
 .sidenav {
-    height: 100%;
-    width: 175px;
+    display: none;
+
+    height: 50%;
+    width: 100vw;
     position: fixed; 
     top: 0;
     left: 0;
     background-color: $Night; 
     padding-top: 60px; 
+
+    // height: 100%;
+    // width: 100vw;
+    // position: absolute;
+    // background-color: $Night; 
+
+    @include medium{
+        display: unset;
+        height: 100%;
+        width: 175px;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        background-color: $Night; 
+        padding-top: 60px; 
+    }
+}
+
+.nav_links.active{
+    text-align: center;
 }
 
 .nav_links{
-    margin: 100px 5px 0 5px;
+    // margin: 100px 5px 0 5px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 24px;
+    @include medium{
+        margin: 100px 5px 0 5px;
+        text-align: unset;
+        font-size: unset;
+    }
 }
+
 
 .nav_categories{
     margin: 20px 0;
+    @include medium{
+        margin: unset;
+    }
 }
 
 .sidenav a {
     color: white;
     text-decoration: none;
-    margin-left: 17px;
+    line-height: 35px;
+    @include medium{
+        margin-left: 17px;
+    }
 }
 
 #img_initials{
     width: 100px;
     height: 100px;
 }
+
+// #nav_img{
+//     // height: 250px;
+//     margin-top: 35px;
+//     width: 100vw;
+//     height: 550px;
+//     // height: 100%;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+
+//     clip-path: polygon(83% 33%, 100% 0, 100% 100%, 0 100%, 35% 79%, 61% 56%);
+// }

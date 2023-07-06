@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Junior Website Developer Portfolio">
+    <link rel="icon" type="image/png" sizes="32x32" href="SCSS/Images/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="SCSS/portfolio.css">
     <script src="https://kit.fontawesome.com/0748773ba3.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
@@ -26,8 +27,8 @@
                 <div class="header_text">
                     <div class="head_text_container">
                         <div class="header_intro">
-                            <h2>Eddie Hickman</h2>
-                            <p>Aspiring Web Developer</p>
+                            <h2 class="name"></h2>
+                            <p class="title"></p>
                         </div>
                     </div>
                     <div class="head_scroll_container">
@@ -64,6 +65,7 @@
             <div id="contact_me" class="nav_categories">
                 <a href="#CONTACT_ME">Contact Me</a>
             </div>
+            <!-- <img id="nav_img" src="SCSS/Images/background_sml.jpg"> -->
         </div>
 
     </div>
@@ -220,6 +222,30 @@
 
 </form>
 
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    const header_name = new Typed('.name', {
+      strings: ['Eddie Hickman'],
+      typeSpeed: 100,
+      showCursor: false 
+    });
+    const header_text = new Typed('.title', {
+      strings: ['Aspiring Web Developer'],
+      typeSpeed: 100,
+      showCursor: false 
+    });
+
+
+    // const $type_cursor = $('.typed-cursor.typed-cursor')
+
+    // $type_cursor.css('display: none;')
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="JS/portfolio.js"></script>
 </body>
 
 </html>
+
+<!-- .typed-cursor.typed-cursor--blink -->

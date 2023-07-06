@@ -5,9 +5,14 @@
 html{
     background-color: $Darkest_Night;
     overflow: auto;
+    // overflow: hidden;
     @include large{
         scroll-snap-type: y mandatory;
     }
+}
+
+.html.active{
+    overflow: hidden;
 }
 
 html,
