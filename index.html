@@ -202,25 +202,33 @@
 
         <div class="inputs_container">
             <div class="input_fields info" id="First_Name">
-                <input placeholder="First Name *" type="text" id="first-name" name="first-name" required>
+                <input placeholder="First Name *" type="text" id="first-name" name="first-name">
+                <div class="error"></div>
               </div>
               <div class="input_fields info" id="Last_Name">
-                <input placeholder="Last name *" type="text" id="last-name" name="last-name" required>
+                <input placeholder="Last name *" type="text" id="last-name" name="last-name">
+                <div class="error"></div>
               </div>
               <div class="input_fields info" id="Email_Address">
-                <input placeholder="Email address *" type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+                <input placeholder="Email address *" type="text" id="email" name="email">
+                <div class="error"></div>
               </div>
               <div class="input_fields feedback" id="Subject">
-                  <input placeholder="Subject" id="message" name="message" required>
+                  <input placeholder="Subject" id="message" name="message">
+                  <div class="error"></div>
               </div>
               <div class="input_fields feedback" id="Message">
-                <textarea id="input_message" placeholder="Message" name="textarea_message" required maxlength="255"></textarea>
+                <textarea id="input_message" placeholder="Message" name="textarea_message" maxlength="255"></textarea>
+                <div class="error"></div>
               </div>
               <button type="submit">Submit</button>
         </div>
     </div>
 
 </form>
+
+<!-- pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required -->
+<!-- required maxlength="255" -->
 
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 

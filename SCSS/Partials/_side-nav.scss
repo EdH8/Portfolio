@@ -10,7 +10,7 @@
 
 .sidenav.active{
     display: unset;
-    overflow: hidden
+    overflow: auto;
 }
 
 #initials{
@@ -44,7 +44,7 @@
 .sidenav {
     display: none;
 
-    height: 50%;
+    height: 750px;
     width: 100vw;
     position: fixed; 
     top: 0;

@@ -41,7 +41,7 @@ ul {
 
 .sidenav.active {
   display: unset;
-  overflow: hidden;
+  overflow: auto;
 }
 
 #initials {
@@ -57,7 +57,7 @@ ul {
 
 .sidenav {
   display: none;
-  height: 50%;
+  height: 750px;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -623,6 +623,10 @@ form textarea {
 #input_message {
   font-family: sans-serif;
   padding: 5px 0 0 3px;
+}
+
+.error {
+  color: red;
 }
 
 .about_me_container {
