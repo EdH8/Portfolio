@@ -558,10 +558,10 @@ form textarea {
   display: flex;
   flex-direction: column;
   padding: 0 23px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 576px) {
   .contactme_container {
-    padding-bottom: 50px;
     align-items: center;
   }
 }

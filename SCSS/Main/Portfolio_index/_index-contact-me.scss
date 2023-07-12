@@ -49,10 +49,10 @@ form textarea{
     display: flex;
     flex-direction: column;
     padding: 0 23px;
-    // padding-bottom: 50px;
+    padding-bottom: 50px;
     // margin-left: 30px;
     @include small{
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         // margin-left: 30px;
         // margin-left: unset;
         align-items: center;
