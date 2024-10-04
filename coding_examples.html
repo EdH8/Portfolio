@@ -34,6 +34,44 @@
 
 <div class="placeholder_text">
     <h1>Coming Soon....</h1>
+    <img id="nav_img" src="SCSS/Images/football_database.png">
+
+    <h2>SQL Query</h2>
+    <p>SELECT
+        mc.player_captain || mc.team_id AS "Team Info",
+        ps.score_goal AS "Goal Scored",
+        ps.match_no AS "Match",
+        md.win_loos AS "Penalty Win/Lose",
+        md.penalty_score AS "Penalty Score"
+        FROM
+            match_captain mc
+        INNER JOIN
+            penalty_shootout ps ON mc.match_id = ps.match_id
+        INNER JOIN
+            match_details md ON mc.match_id = md.match_id
+        ORDER BY
+            CASE WHEN md.win_loos = 'Win' THEN 1 ELSE 2 END,
+            "Team Info";
+    </p>
+
+    <ul>
+        <li>The query retrieves data from three tables: match_captain, penalty_shootout, and match_details.</li><br>
+
+        <li>It combines the data from these tables using INNER JOIN operations based on the match_id key, connecting match captains, penalty shootout information, and match details.</li><br>
+    
+        <li>The selected columns in the output are:<br>
+
+            "Team Info": Concatenation of player's captain and team ID.<br>
+            "Goal Scored": Number of goals scored in the penalty shootout.<br>
+            "Match": Match number of the penalty shootout.<br>
+            "Penalty Win/Lose": Outcome of the penalty shootout (win or loss).<br>
+            "Penalty Score": Score of the penalty shootout.</li><br>
+
+        <li>The ORDER BY clause determines the order of the result set:<br>
+
+            The CASE expression sorts records with a win ("Win") first (value 1), followed by records with a loss ("Lose") (value 2).<br>
+            Within each group of wins and losses, the records are further sorted based on the concatenated value of the player's captain and team ID.</li>
+    </ul>
 </div>
 
 <!--======================================-->

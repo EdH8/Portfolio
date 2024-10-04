@@ -325,13 +325,14 @@ ul {
 @media screen and (min-width: 576px) {
   .project_style {
     width: 500px;
-    height: 500px;
+    height: 450px;
     padding-bottom: unset;
   }
 }
 @media screen and (min-width: 768px) {
   .project_style {
     width: 550px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -465,7 +466,7 @@ ul {
 
 @media screen and (min-width: 576px) {
   #project_one_link {
-    margin-top: 85px;
+    margin-top: 37px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -485,8 +486,29 @@ ul {
 }
 
 @media screen and (min-width: 576px) {
+  #project_two_link {
+    margin-top: 95px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #project_two_link {
+    margin-top: 125px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #project_two_link {
+    margin-top: 65px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #project_two_link {
+    margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 576px) {
   .github_btn {
-    margin-top: 75px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -496,7 +518,7 @@ ul {
 }
 @media screen and (min-width: 992px) {
   .github_btn {
-    margin-top: 95px;
+    margin-top: 94px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -707,6 +729,11 @@ form textarea {
   .placeholder_text {
     margin-left: 175px;
   }
+}
+
+.placeholder_text img {
+  width: 500px;
+  height: 500px;
 }
 
 main {

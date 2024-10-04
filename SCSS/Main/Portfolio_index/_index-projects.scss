@@ -54,11 +54,12 @@
     padding-bottom: 20px;
     @include small{
         width: 500px;
-        height: 500px;
+        height: 450px;
         padding-bottom: unset;
     }
     @include medium{
         width: 550px;
+        height: 500px;
     }
     @include large{
         width: 250px;
@@ -149,20 +150,6 @@
     border-radius: 5px;
     background-color: #1b1b1b;
     color: white;
-    // margin-bottom: 10px;
-    // @include small{
-    //     margin-top: 55px;
-    //     margin-bottom: unset;
-    // }
-    // @include medium{
-    //     margin-top: 20px;
-    // }
-    // @include large{
-    //     margin-top: 70px;
-    // }
-    // @include x-large{
-    //     margin-top: 40px;
-    // }
 }
 
 .project_style{
@@ -191,7 +178,7 @@
 
 #project_one_link{
     @include small{
-        margin-top: 85px;
+        margin-top: 37px;
     }
     @include medium{
         margin-top: 105px;
@@ -204,15 +191,30 @@
     }
 }
 
+#project_two_link{
+    @include small{
+        margin-top: 95px;
+    }
+    @include medium{
+        margin-top: 125px;
+    }
+    @include large{
+        margin-top: 65px;
+    }
+    @include x-large{
+        margin-top: 65px;
+    }
+}
+
 .github_btn{
     @include small{
-        margin-top: 75px;
+        margin-top: 30px;
     }
     @include medium{
         margin-top: 45px;
     }
     @include large{
-        margin-top: 95px;
+        margin-top: 94px;
     }
     @include x-large{
         margin-top: 64px;

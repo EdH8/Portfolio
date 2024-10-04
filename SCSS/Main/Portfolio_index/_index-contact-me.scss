@@ -2,10 +2,6 @@
 //GET IN TOUCH CSS/SASS:
 //======================================================
 
-// form{
-//     padding: 0 20px;
-// }
-
 form textarea{
     resize: none;
 }
@@ -50,11 +46,7 @@ form textarea{
     flex-direction: column;
     padding: 0 23px;
     padding-bottom: 50px;
-    // margin-left: 30px;
     @include small{
-        // padding-bottom: 50px;
-        // margin-left: 30px;
-        // margin-left: unset;
         align-items: center;
     }
     @include large{
@@ -104,16 +96,6 @@ form textarea{
     font-family: sans-serif;
     padding: 5px 0 0 3px;
 }
-
-// .input_fields.success input{
-//     border-color: green;
-//     border-width: 3px;
-// }
-
-// .input_fields.error input{
-//     border-color: red;
-//     border-width: 3px;
-// }
 
 .error{
     color: red;
